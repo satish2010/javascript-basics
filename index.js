@@ -112,3 +112,15 @@ do {
     if (j % 2 !== 0) console.log(j);
     j++;
 } while (j <= 5)
+// Avoid Infinite loop like missing i++ increment or incorrect 
+// For object
+for (let key in person) console.log(key, person[key]);
+// For Array
+for (let color of selectedColors) console.log(color);
+// let k = 0;
+// while (k <= 10) {
+//     if (k === 5) break;
+//     console.log(i);
+//     k++
+// }
+
