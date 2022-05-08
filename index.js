@@ -1,19 +1,27 @@
 // This is my first Javascript code
 console.log('Hello World!');
-let name = 'Satish'; // String literals
-let age = 30; // Number literals
+// String literals
+let name = 'Satish';
+// Number literals
+let age = 30;
+// Boolean literals
 let isApproved = true;
+// Assign undefined
 let firstName = undefined;
+// Assign undefined
 let lastName = undefined;
+// Object
 let person = {
     name: 'Anay',
     age: 8
 }
 console.log(person.name);
 console.log(person['name']);
+// Array
 let selectedColors = ['red', 'blue'];
 selectedColors[2] = 'yellow';
 console.log(selectedColors);
+// function
 function greet(firstName, lastName) {
     console.log('Hello' + ' ' + firstName + ' ' + lastName)
 }
@@ -74,6 +82,7 @@ let myPermission = 0;
 myPermission = myPermission | readPermission | writePermission
 let message = (myPermission & readPermission) ? 'yes' : 'no';
 console.log(message);
+// swap values
 let a = 'red';
 let b = 'blue';
 let c = a;
@@ -81,11 +90,13 @@ a = b;
 b = c;
 console.log(a);
 console.log(b);
+// if else
 let hour = 10;
 if (hour >= 6 && hour < 12) console.log('Good Morning!');
 else if (hour >= 12 && hour < 18) console.log('Good Afternoon');
 else console.log('Good Evening!');
 let user = 'guest';
+// Switch
 switch (user) {
     case 'guest':
         console.log('Guest User');
@@ -96,17 +107,20 @@ switch (user) {
     default:
         console.log('Unknown User');
 }
+// for loop
 for (let i = 0; i <= 5; i++) {
     if (i % 2 !== 0) console.log(i);
 }
 for (let i = 5; i > 5; i--) {
     if (i % 2 !== 0) console.log(i);
 }
+// while loop
 let i = 0;
 while (i <= 5) {
     if (i % 2 !== 0) console.log(i);
     i++;
 }
+// do while
 let j = 9;
 do {
     if (j % 2 !== 0) console.log(j);
